@@ -13,4 +13,11 @@ app.listen(3000,()=>{
 
   //End points
 
+  app.get()
+  app.get()
+  app.post()
+  app.patch()
+  app.delete()
+  
+
   
