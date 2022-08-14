@@ -1,23 +1,34 @@
 require('dotenv').config()
-
+const 
+{
+  getpayment,
+  getpayments,
+  createpayment,
+  updatepayment,
+  deletepayment
+} = require('./controllers')
+require('./models')()
 const express = require('express')
 
 const app = express()
 
 const port=process.env.PORT || 3000
 
-app.listen(3000,()=>{
-    console.log(`Server is running on port ${port}`);
-  })
-
-
   //End points
 
-  app.get()
-  app.get()
-  app.post()
-  app.patch()
-  app.delete()
-  
+app.get('/api/v1/payment/:id',getpayment)
+app
+  .route('/api/v1/payment')
+  .get(getpayment)
+  .post(createpayment)
+  .patch(updatepayment)
+  .delete(deletepayment)
 
+//Catches all Endpoints || 404 route
+
+app.get('*',(req,res)=> res.send('404 Not Found'))
+
+app.listen(port,()=>{
+    console.log(`Server is running on port ${port}`);
+  })
   
