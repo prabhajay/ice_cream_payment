@@ -1,4 +1,5 @@
 require('dotenv').config()
+const controllers=require('./controllers')
 const 
 {
   getpayment,
@@ -6,9 +7,9 @@ const
   createpayment,
   updatepayment,
   deletepayment
-} = require('./controllers')
+} = require('./controllers').payment
 
-require('./db/models')()
+require('./db')()
 
 const express = require('express')
 
