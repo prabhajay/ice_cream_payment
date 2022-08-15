@@ -1,6 +1,7 @@
-# Project Steps
+# IceCream Payment
 
-# Project Name: IceCream Payment create, edit, delete and update
+- Icecream payment made in HTML,CSS,Javascript,NodeJS,ExpressJS and MongoDB framework.It is able to create,edit,delete and update.
+- 
 
 - initialize npm
 - initialize git repo
@@ -27,7 +28,7 @@
 
 ### Validation
 
-- One per endpoint using joi and within the model
+- One per endpoint using joi and/or within the model
 
 
 ### Data Models

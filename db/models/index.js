@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-module.export = ()=>{
+module.exports=()=>{
 const {DB_USERNAME,
     DB_PASSWORD,
     DB_NAME}=process.env
